@@ -1,0 +1,3 @@
+=Roman number converter
+
+This is just a simple example Rails application converting Arabic numbers to Roman. Using jQuery, testing with RSpec, no active record at all.
