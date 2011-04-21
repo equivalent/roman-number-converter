@@ -4,6 +4,7 @@ class ConvertorController < ApplicationController
   end
 
   def create
+    @number
   end
 
 end

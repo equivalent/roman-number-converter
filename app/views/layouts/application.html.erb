@@ -4,11 +4,17 @@
   <title>RomanNuberConvertor</title>
   <%= stylesheet_link_tag :all %>
   <%= javascript_include_tag 'jquery.min.js' %>
+  <%= javascript_include_tag :defaults %>
   <%= csrf_meta_tag %>
+  <title>Roman number generator</title>
 </head>
 <body>
+<div id="cont">
 
-<%= yield %>
+ <h2>Roman number converter</h2>
+ <%= image_tag "roman_tux_sticker-p217137276620620477qjcl_400.jpg" %>
 
+  <%= yield %>
+</div>
 </body>
 </html>

@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe ConvertorController do
+describe RomanNumbersController do
 
   describe "GET 'index'" do
     it "should be successful" do
@@ -9,7 +9,7 @@ describe ConvertorController do
     end
   end
 
-  describe "POST 'create'" do
+  describe "post 'create'" do
     it "should be successful" do
       post 'create'
       response.should be_success

@@ -1,8 +1,12 @@
 RomanNuberConvertor::Application.routes.draw do
-  get 'convertor/index'
-  post 'convertor/create'
 
-  # or we could just do:  resource :convertor, :only => [:index, :create]
+
+
+
+ # get 'convertor/index'
+  #post 'convertor/create'
+
+  resources :roman_numbers, :only => [:index, :create]
 
 
 
@@ -58,7 +62,7 @@ RomanNuberConvertor::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  root :to => "convertor#index"
+  root :to => "roman_numbers#index"
 
   # See how all your routes lay out with "rake routes"
 

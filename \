@@ -1,0 +1,17 @@
+
+<h2>Roman number ronvertor</h2>
+
+<div id="roman_conv"> 
+
+<%#cant use form_for @number because I dissabled ActiveRecord %>
+<%= form_tag '/roman_numbers', :id => "roman_nuber_converter" do %>
+   <%= text_field_tag 'number[number_to_convert]', @number.converted %>
+   <%= submit_tag "Convert !" %>
+<% end %>
+
+
+</div>
+
+<p class="note">Note: invalid chars will be ignored!</p>
+
+

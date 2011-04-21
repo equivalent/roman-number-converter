@@ -7,9 +7,6 @@ gem 'jquery-rails'
 group :test do
   gem 'rspec-rails'
   #+factory girl but it's not necessery in this project
-  gem 'cucumber-rails'
-  gem 'capybara'
-  gem 'database_cleaner'
   gem 'ZenTest'
 end
 
