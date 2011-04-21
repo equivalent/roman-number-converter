@@ -11,7 +11,7 @@ describe RomanNumbersController do
 
   describe "post 'create'" do
     it "should be successful" do
-      post 'create'
+      post 'create', :number=> { :number_to_convert => "33"}
       response.should be_success
     end
   end
